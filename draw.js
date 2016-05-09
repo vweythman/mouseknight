@@ -61,7 +61,7 @@ function array_hexgrid(id, tiles, center, size)
 
 
 function hexagon(ctx, point, border, colors, size)
-{	
+{
 	ctx.fillStyle   = colors.fill;
 	ctx.strokeStyle = colors.line;
 	hexafill(ctx, point[0], point[1], size);
@@ -71,7 +71,7 @@ function hexagon(ctx, point, border, colors, size)
 function hexaline(ctx, cenx, ceny, size, width)
 {
 	ctx.beginPath();
-    ctx.lineWidth = width;
+	ctx.lineWidth = width;
 	for(var i = 0; i < 7; i++)
 	{
 		var ang = 2 * Math.PI / 6 * (i + 0.5);
@@ -87,8 +87,8 @@ function hexaline(ctx, cenx, ceny, size, width)
 			ctx.lineTo(x, y);
 		}
 	}
-    ctx.closePath();
-    ctx.stroke();
+	ctx.closePath();
+	ctx.stroke();
 }
 
 function hexafill(ctx, cenx, ceny, size)
@@ -110,7 +110,7 @@ function hexafill(ctx, cenx, ceny, size)
 		}
 	}
 	ctx.fill();
-    ctx.closePath();
+	ctx.closePath();
 }
 
 function colorsheet(tile, state)
